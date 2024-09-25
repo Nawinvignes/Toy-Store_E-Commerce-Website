@@ -1,0 +1,129 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #444;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #f9f9f9;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section form {
+  font-size: 0.9rem; /* Smaller font size */
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px; /* Reduced margin */
+}
+
+.footer-section a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px; /* Reduced gap */
+  justify-content: center;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 30px; /* Smaller size */
+  height: 30px; /* Smaller size */
+  line-height: 30px;
+  background-color: #444;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1rem; /* Smaller font size */
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #555;
+}
+
+.contact-form {
+  max-width: 300px; /* Smaller max-width */
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Increased gap between input fields */
+}
+
+.form input,
+.form textarea {
+  padding: 8px; /* Reduced padding */
+  border-radius: 4px; /* Smaller border radius */
+  border: none;
+  font-size: 0.9rem; /* Smaller font size */
+}
+
+.form input {
+  height: 20px; /* Smaller height */
+}
+
+.form textarea {
+  resize: vertical;
+  height: 50px; /* Smaller height */
+}
+
+.form button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 8px; /* Reduced padding */
+  font-size: 0.9rem; /* Smaller font size */
+  border-radius: 4px; /* Smaller border radius */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form button:hover {
+  background-color: #e5533d;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}

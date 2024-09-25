@@ -1,0 +1,40 @@
+.notification-container {
+    position: fixed;
+    top: 70px; /* Adjust this based on your Navbar height */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    pointer-events: none; /* Allows clicks to pass through */
+  }
+  
+  .notification {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeOut 3s forwards;
+    pointer-events: auto; /* Allow interactions with notifications */
+  }
+  
+  .notification-icon {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; transform: translateY(0); }
+    80% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+  }
+  

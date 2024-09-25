@@ -1,0 +1,153 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px; /* Base font size */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #EDE574;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E1F5C4, #EDE574); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.boys {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for content area */
+  border-radius: 8px; /* Optional: rounded corners for the content area */
+  margin: 20px; /* Add some margin to keep content away from edges */
+}
+
+.boys h1 {
+  font-size: 60px; /* Increased font size */
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Edu AU VIC WA NT Hand', cursive; /* Special font for the main heading */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  padding: 20px; /* Add some padding to make the background visible */
+  border-radius: 8px; /* Rounded corners for the background */
+}
+
+.boys p {
+  font-size: 20px; /* Increased font size */
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.featured-toys, .toy-categories, .popular-toys {
+  margin-top: 40px;
+}
+
+.featured-toys h2, .toy-categories h2, .popular-toys h2 {
+  font-size: 32px; /* Increased font size */
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.toy-list, .category-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px; /* Reduced gap between items */
+}
+
+.toy-item, .category-item {
+  flex: 1 1 200px; /* Smaller flex basis */
+  margin: 10px; /* Reduced margin */
+  padding: 10px; /* Reduced padding */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.toy-item:hover, .category-item:hover {
+  transform: scale(1.05);
+}
+
+.toy-item img, .category-item img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.toy-item h3, .category-item h3 {
+  font-size: 18px; /* Reduced font size */
+  color: #333;
+  margin: 10px 0; /* Reduced margin */
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.toy-item p, .description {
+  font-size: 14px; /* Reduced font size */
+  color: #555;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.toy-details {
+  display: flex;
+  flex-direction: column; /* Column layout */
+  align-items: center;
+  justify-content: center;
+}
+
+.add-to-cart, .add-to-wishlist {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 5px 10px; /* Reduced padding */
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px; /* Reduced font size */
+  margin: 5px 0; /* Reduced margin */
+  width: 100%; /* Full width */
+  text-align: center;
+}
+
+.add-to-cart:hover, .add-to-wishlist:hover {
+  background-color: #e64a19;
+}
+
+.review-stars {
+  color: #FFD700;
+  font-size: 16px; /* Reduced size */
+  margin: 5px 0; /* Reduced margin */
+}
+
+.review-stars .fa-star, .review-stars .fa-star-half-alt, .review-stars .fa-star-o {
+  margin-right: 5px;
+}
+
+.wishlist-icon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.wishlist-icon.added {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .boys h1 {
+    font-size: 50px; /* Decreased font size for mobile */
+    padding: 15px; /* Adjusted padding */
+  }
+
+  .boys p {
+    font-size: 18px; /* Adjusted font size for mobile */
+  }
+
+  .toy-item, .category-item {
+    flex: 1 1 100%;
+    margin: 10px 0; /* Adjust margin for smaller screens */
+  }
+
+  .toy-list, .category-list {
+    gap: 10px; /* Adjust gap for smaller screens */
+  }
+}

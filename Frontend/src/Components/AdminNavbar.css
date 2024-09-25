@@ -1,0 +1,169 @@
+/* Admin Navbar Styles */
+.admin-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    flex-wrap: wrap;
+  }
+  
+  .admin-nav-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .menu-icon {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .logo-img {
+    height: 50px;
+    width: auto;
+  }
+  
+  .app-name {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    margin-left: 10px;
+    color: whitesmoke;
+  }
+  
+  .admin-nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .admin-nav-links li {
+    margin: 0 15px;
+  }
+  
+  .admin-navbar a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 10px 15px; /* Added padding for a better hover effect */
+    border-radius: 8px; /* Rounded corners for all links */
+  }
+  
+  .admin-navbar a:hover {
+    color: #ff6347;
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle background color on hover */
+  }
+  
+  .admin-nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex-wrap: wrap;
+  }
+  
+  .admin-button {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 8px 16px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  
+  .admin-button:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    gap: 15px; /* Ensure proper spacing between icons */
+  }
+  
+  .icon {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  @media (max-width: 768px) {
+    .admin-nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+  
+    .admin-nav-links.open {
+      display: flex;
+    }
+  
+    .admin-nav-links li {
+      margin: 15px 0;
+      text-align: center;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .admin-nav-right {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: flex-start; /* Align to the left */
+      gap: 0; /* Remove spacing between icons */
+      margin-left: 15px; /* Add left margin */
+      margin: 10px 0;
+    }
+  
+    .admin-button {
+      width: auto;
+      text-align: center;
+      margin-left: 0; /* Remove left margin to center align */
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .app-name {
+      font-size: 20px;
+    }
+  
+    .admin-nav-links li {
+      margin: 10px 0;
+    }
+  
+    .admin-button {
+      width: auto;
+      padding: 6px 12px;
+      margin-left: 0; /* Remove left margin to center align */
+    }
+  }
+  

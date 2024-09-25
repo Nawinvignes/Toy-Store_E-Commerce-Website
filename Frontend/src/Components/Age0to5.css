@@ -1,0 +1,125 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #E1F5C4, #EDE574);
+}
+
+.age0to5 {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.age0to5 h1 {
+  font-size: 60px;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Edu AU VIC WA NT Hand', cursive;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.age0to5 p {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.toy-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.toy-item {
+  flex: 1 1 200px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.toy-item:hover {
+  transform: scale(1.05);
+}
+
+.toy-item img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.toy-item h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.toy-item p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.toy-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-to-cart, .add-to-wishlist {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  margin: 5px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.add-to-cart:hover, .add-to-wishlist:hover {
+  background-color: #e64a19;
+}
+
+.review-stars {
+  color: #FFD700;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.review-stars .fa-star, .review-stars .fa-star-half-alt, .review-stars .fa-star-o {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .age0to5 h1 {
+    font-size: 50px;
+    padding: 15px;
+  }
+
+  .toy-item {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+  .toy-list {
+    gap: 10px;
+  }
+}

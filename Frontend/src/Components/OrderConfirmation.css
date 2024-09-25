@@ -1,0 +1,15 @@
+/* src/Components/OrderConfirmation.css */
+.order-confirmation {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .order-confirmation h2 {
+    font-size: 2em;
+    color: #1d1414;
+  }
+  
+  .order-confirmation p {
+    font-size: 1.2em;
+  }
+  

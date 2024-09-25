@@ -1,0 +1,99 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #EDE574;
+  background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574);
+  background: linear-gradient(to right, #E1F5C4, #EDE574);
+}
+
+.review-container {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.review-container h2 {
+  font-size: 60px;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Edu AU VIC WA NT Hand', cursive;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.review-container p {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.review-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.review-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.review-item:hover {
+  transform: scale(1.05);
+}
+
+.review-item h3 {
+  font-size: 28px;
+  color: #333;
+  margin: 0 0 10px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.review-item p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.review-stars {
+  color: #FFD700;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.review-stars .fa-star, .review-stars .fa-star-half-alt, .review-stars .fa-star-o {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .review-container {
+    padding: 15px;
+  }
+
+  .review-container h2 {
+    font-size: 50px;
+    padding: 15px;
+  }
+
+  .review-item {
+    padding: 15px;
+    max-width: 100%;
+  }
+}

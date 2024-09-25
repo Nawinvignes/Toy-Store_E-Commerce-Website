@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-container {
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.form-container h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #444;
+  text-align: center;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-item label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.input-item input,
+.input-item select {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.input-item input:focus,
+.input-item select:focus {
+  border-color: #ff6347;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-container input {
+  flex: 1;
+  padding-right: 50px; /* Add space for the icon */
+}
+
+.password-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.password-icon:hover {
+  color: #ff6347;
+}
+
+.form-container button {
+  padding: 12px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ff6347;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #e5533d;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.social-icons .icon {
+  margin: 0 15px;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons .icon:hover {
+  color: #ff6347;
+  transform: scale(1.1);
+}
+
+.login-link {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Media Query for Mobile View Adjustments */
+@media (max-width: 600px) {
+  .form-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .form-container button {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

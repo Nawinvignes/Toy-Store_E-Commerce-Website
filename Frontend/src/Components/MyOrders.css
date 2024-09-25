@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px; /* Base font size */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f1f3f6; /* Neutral background color */
+}
+
+.my-orders {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 8px; /* Rounded corners */
+  margin: 20px auto; /* Centered content with margin */
+  max-width: 1000px; /* Max width for the content area */
+}
+
+.my-orders h3 {
+  font-size: 40px; /* Larger font size for the heading */
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Edu AU VIC WA NT Hand', cursive; /* Special font for the heading */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 15px; /* Padding to enhance readability */
+  border-radius: 8px; /* Rounded corners for the background */
+}
+
+.order-summary {
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+  transition: background-color 0.3s;
+}
+
+.order-summary:hover {
+  background-color: #f9f9f9;
+}
+
+.order-summary h4 {
+  font-size: 28px; /* Font size for subheadings */
+  color: #333;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.order-summary p {
+  font-size: 18px; /* Font size for paragraphs */
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.order-summary ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.order-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 8px;
+}
+
+.order-item-details {
+  font-size: 18px; /* Font size for item details */
+  color: #555;
+}
+
+.address {
+  font-size: 18px; /* Font size for address */
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.address address {
+  font-style: normal;
+}
+
+.order-summary:last-child {
+  border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .my-orders {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-item-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-item {
+    padding: 10px;
+  }
+
+  .order-summary h4 {
+    font-size: 24px; /* Adjust font size for headings */
+  }
+
+  .order-summary p {
+    font-size: 16px; /* Adjust font size for paragraphs */
+  }
+}

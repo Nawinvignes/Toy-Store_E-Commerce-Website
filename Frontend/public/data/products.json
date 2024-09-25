@@ -1,0 +1,147 @@
+[
+    {
+      "id": 1,
+      "name": "Building Blocks",
+      "price": 29.99,
+      "img": "img1.jpg",
+      "description": "Colorful blocks to enhance creativity and motor skills.",
+      "type": "featured"
+    },
+    {
+      "id": 2,
+      "name": "Plush Bear",
+      "price": 19.99,
+      "img": "img3.jpg",
+      "description": "Ultra-soft and cuddly bear for endless snuggling.",
+      "type": "featured"
+    },
+    {
+      "id": 3,
+      "name": "Kidding Toy",
+      "price": 39.99,
+      "img": "img1.jpg",
+      "description": "Engaging toy with interactive components for fun and learning.",
+      "type": "featured"
+    },
+    {
+      "id": 10,
+      "name": "Magic Wand",
+      "price": 14.99,
+      "img": "img1.jpg",
+      "description": "Spark your imagination with this magical wand.",
+      "type": "featured"
+    },
+    {
+      "id": 11,
+      "name": "Robot Dog",
+      "price": 49.99,
+      "img": "img2.jpg",
+      "description": "A friendly robot dog that follows your commands.",
+      "type": "featured"
+    },
+    {
+      "id": 12,
+      "name": "Art Kit",
+      "price": 24.99,
+      "img": "img3.jpg",
+      "description": "Everything you need for a creative art session.",
+      "type": "featured"
+    },
+    {
+      "id": 13,
+      "name": "Toy Drum",
+      "price": 15.99,
+      "img": "img2.jpg",
+      "description": "Fun and interactive drum set for kids.",
+      "type": "featured"
+    },
+    {
+      "id": 14,
+      "name": "Puzzle Cube",
+      "price": 9.99,
+      "img": "img3.jpg",
+      "description": "Challenging puzzle cube to keep you engaged.",
+      "type": "featured"
+    },
+    {
+      "id": 15,
+      "name": "Toy Airplane",
+      "price": 29.99,
+      "img": "img1.jpg",
+      "description": "Fly high with this amazing toy airplane.",
+      "type": "featured"
+    },
+    {
+      "id": 16,
+      "name": "Dinosaur Figure",
+      "price": 19.99,
+      "img": "img2.jpg",
+      "description": "Detailed dinosaur figure for imaginative play.",
+      "type": "featured"
+    },
+    {
+      "id": 4,
+      "name": "Toy Car",
+      "price": 14.99,
+      "img": "img1.jpg",
+      "description": "Fast and fun toy car for racing enthusiasts.",
+      "type": "new"
+    },
+    {
+      "id": 5,
+      "name": "Puzzle Game",
+      "price": 24.99,
+      "img": "img2.jpg",
+      "description": "Challenging puzzle game to stimulate the mind.",
+      "type": "new"
+    },
+    {
+      "id": 6,
+      "name": "Action Figure",
+      "price": 34.99,
+      "img": "img3.jpg",
+      "description": "Detailed action figure for imaginative play.",
+      "type": "new"
+    },
+    {
+      "id": 17,
+      "name": "RC Helicopter",
+      "price": 59.99,
+      "img": "img1.jpg",
+      "description": "Fly high with this amazing RC Helicopter.",
+      "type": "new"
+    },
+    {
+      "id": 21,
+      "name": "Yo-Yo",
+      "price": 7.99,
+      "img": "img2.jpg",
+      "description": "Classic toy for endless fun.",
+      "type": "new"
+    },
+    {
+      "id": 7,
+      "name": "Doll House",
+      "price": 49.99,
+      "img": "img1.jpg",
+      "description": "Beautiful doll house with intricate details.",
+      "type": "best"
+    },
+    {
+      "id": 8,
+      "name": "Train Set",
+      "price": 44.99,
+      "img": "img2.jpg",
+      "description": "Complete train set for hours of fun.",
+      "type": "best"
+    },
+    {
+      "id": 9,
+      "name": "Lego Set",
+      "price": 59.99,
+      "img": "img3.jpg",
+      "description": "Large Lego set to build and create.",
+      "type": "best"
+    }
+  ]
+  

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.admin-orders {
+  font-family: 'Poppins', sans-serif;
+  background: #EDE574; /* Gradient background similar to your existing styles */
+  background: linear-gradient(to right, #E1F5C4, #EDE574); /* Ensure a consistent look with your application */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the content */
+  margin: 20px; /* Add some margin for spacing */
+}
+
+.admin-orders h1, .admin-orders h2, .admin-orders h3 {
+  font-family: 'Edu AU VIC WA NT Hand', cursive; /* Special font for headings */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.admin-orders h1 {
+  font-size: 48px; /* Larger font size for primary headings */
+}
+
+.admin-orders h2 {
+  font-size: 32px; /* Font size for secondary headings */
+}
+
+.admin-orders h3 {
+  font-size: 24px; /* Font size for tertiary headings */
+}
+
+table {
+  width: 100%;
+  max-width: 1000px; /* Limit table width for better readability */
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #d3d3d3; /* Light grey background for table headers */
+  font-weight: bold;
+}
+
+button {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 10px 0; /* Add margin for spacing */
+}
+
+button:hover {
+  background-color: #e64a19;
+}
+
+@media (max-width: 768px) {
+  .admin-orders {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th, td {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+
+  .admin-orders h1 {
+    font-size: 36px; /* Adjust font size for primary headings on smaller screens */
+  }
+
+  .admin-orders h2 {
+    font-size: 28px; /* Adjust font size for secondary headings on smaller screens */
+  }
+
+  .admin-orders h3 {
+    font-size: 20px; /* Adjust font size for tertiary headings on smaller screens */
+  }
+}

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+.admin-feedback {
+  padding: 20px;
+  background: #EDE574; /* Fallback color */
+  background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574); /* For Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E1F5C4, #EDE574); /* For modern browsers */
+  min-height: calc(100vh - 60px); /* Ensure full-height content, accounting for header/footer */
+  font-family: 'Poppins', sans-serif; /* Matching the font-family from home.css */
+  text-align: center; /* Center align text and elements */
+}
+
+.admin-feedback h2 {
+  font-size: 24px;
+  color: black; /* Orange color for heading */
+  margin-bottom: 20px;
+  font-family: 'Edu AU VIC WA NT Hand', cursive; /* Special font for the main heading */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  padding: 20px; /* Add some padding to make the background visible */
+  border-radius: 8px; /* Rounded corners for the background */
+  display: inline-block; /* Ensure heading only takes as much space as it needs */
+}
+
+.admin-feedback table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto; /* Center align table and add top margin */
+  max-width: 1200px; /* Set max-width for larger screens */
+}
+
+.admin-feedback th, .admin-feedback td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-feedback th {
+  background-color: #FF5722; /* Orange background for table headers */
+  color: white;
+  font-family: 'Edu AU VIC WA NT Hand', cursive; /* Special font for table headers */
+}
+
+.admin-feedback tr:hover {
+  background-color: #f1f1f1;
+}
+
+.admin-feedback .search-container {
+  margin-bottom: 20px;
+}
+
+.admin-feedback input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 600px; /* Set max-width for the input */
+  margin: 0 auto; /* Center align the input */
+  box-sizing: border-box;
+}
+
+.admin-feedback .sort-container {
+  margin-bottom: 20px;
+}
+
+.admin-feedback .sort-container button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  background-color: #FF5722; /* Orange background for buttons */
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px; /* Font size for buttons */
+}
+
+.admin-feedback .sort-container button:hover {
+  background-color: #E64A19; /* Darker orange on hover */
+}
+
+.admin-feedback .pagination {
+  margin-top: 20px;
+}
+
+.admin-feedback .pagination button {
+  padding: 10px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #FF5722; /* Orange background for pagination buttons */
+  color: white;
+}
+
+.admin-feedback .pagination button.active {
+  background-color: #E64A19; /* Darker orange for the active page */
+}
+
+.admin-feedback .pagination button:hover {
+  background-color: #E64A19; /* Darker orange on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .admin-feedback h2 {
+    font-size: 22px; /* Adjust font size for heading on medium screens */
+  }
+
+  .admin-feedback th, .admin-feedback td {
+    padding: 10px; /* Adjust padding for table cells on medium screens */
+  }
+
+  .admin-feedback input[type="text"] {
+    font-size: 16px; /* Adjust font size for input on medium screens */
+  }
+
+  .admin-feedback .sort-container button, .admin-feedback .pagination button {
+    font-size: 11px; /* Adjust font size for buttons on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-feedback h2 {
+    font-size: 20px; /* Adjust font size for heading on smaller screens */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .admin-feedback table {
+    font-size: 14px; /* Adjust font size for tables on smaller screens */
+  }
+
+  .admin-feedback input[type="text"] {
+    font-size: 14px; /* Adjust font size for input on smaller screens */
+  }
+
+  .admin-feedback .sort-container button, .admin-feedback .pagination button {
+    font-size: 10px; /* Adjust font size for buttons on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-feedback h2 {
+    font-size: 18px; /* Adjust font size for heading on extra small screens */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .admin-feedback table {
+    font-size: 12px; /* Adjust font size for tables on extra small screens */
+  }
+
+  .admin-feedback input[type="text"] {
+    font-size: 12px; /* Adjust font size for input on extra small screens */
+  }
+
+  .admin-feedback .sort-container button, .admin-feedback .pagination button {
+    font-size: 9px; /* Adjust font size for buttons on extra small screens */
+  }
+}

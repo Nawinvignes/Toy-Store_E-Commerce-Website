@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px; /* Base font size */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: #D1913C;  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #FFD194, #D1913C);  Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #FFD194, #D1913C); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+.about {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for the content area */
+  border-radius: 8px; /* Rounded corners for the content area */
+  margin: 20px auto; /* Center the content and add margin */
+  max-width: 800px; /* Max width for the content area */
+}
+
+.about h2 {
+  font-size: 40px; /* Larger font size for the heading */
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Edu AU VIC WA NT Hand', cursive; /* Special font for the heading */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 15px; /* Padding to enhance readability */
+  border-radius: 8px; /* Rounded corners for the background */
+}
+
+.about p {
+  font-size: 22px; /* Increased font size for better readability */
+  color: #555;
+  line-height: 1.6; /* Line height for improved readability */
+  margin-bottom: 30px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-content img {
+  width: 100%;
+  max-width: 400px; /* Limit image size */
+  border-radius: 8px;
+}
+
+.about-content h3 {
+  font-size: 28px; /* Font size for subheadings */
+  color: #333;
+  margin: 15px 0;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.about-content ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.about-content li {
+  font-size: 18px; /* Font size for list items */
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.team-section, .testimonials-section {
+  margin-top: 40px;
+}
+
+.team-section img, .testimonials-section img {
+  width: 100%;
+  max-width: 600px; /* Limit image size */
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .about-content img {
+    max-width: 100%; /* Full width for images on small screens */
+  }
+}

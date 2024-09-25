@@ -1,0 +1,306 @@
+/* General navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center all items vertically */
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  flex-wrap: wrap;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.menu-icon {
+  display: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.app-name {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  margin-left: 10px;
+  color: whitesmoke;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Center all links vertically */
+}
+
+.nav-links li {
+  margin: 0 15px;
+  position: relative; /* Needed for positioning dropdown */
+}
+
+.navbar a,
+.category-dropdown button,
+.age-groups-dropdown button {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 10px 15px; /* Uniform padding for all links and dropdown button */
+  border-radius: 8px; /* Rounded corners for all links */
+  display: flex;
+  align-items: center; /* Center align text and icon */
+  height: 100%; /* Ensure full height */
+  line-height: normal; /* Normal line height */
+}
+
+.navbar a:hover,
+.category-dropdown button:hover,
+.age-groups-dropdown button:hover {
+  color: #ff6347;
+  background-color: rgba(255, 255, 255, 0.2); /* Subtle background color on hover */
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.search-form input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  font-family: 'Poppins', sans-serif;
+  width: 250px; /* Increase the width for larger viewports */
+}
+
+.search-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  color: #fff;
+}
+
+.nav-button {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 8px 16px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.nav-button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  gap: 15px; /* Ensure proper spacing between icons */
+}
+
+.icon {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+.icon .badge {
+  background-color: #ff6347;
+  color: #fff;
+  border-radius: 50%;
+  padding: 3px 5px;
+  font-size: 12px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+/* Dropdown menu styles */
+.category-dropdown,
+.age-groups-dropdown {
+  position: relative;
+}
+
+.category-dropdown button,
+.age-groups-dropdown button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 10px 15px; /* Match padding with other links */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center; /* Center align text and icon */
+}
+
+.category-dropdown button:hover,
+.age-groups-dropdown button:hover {
+  color: #ff6347; /* Match hover color */
+  background-color: rgba(255, 255, 255, 0.2); /* Match hover background color */
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-menu.open {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Match hover background color */
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-right {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start; /* Align to the left */
+    gap: 0; /* Remove spacing between icons */
+    margin-left: 15px; /* Add left margin */
+    margin: 10px 0;
+  }
+
+  .search-form {
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .search-form input {
+    width: 80%;
+  }
+
+  .icons {
+    flex-direction: row; /* Ensure icons are in a row */
+    gap: 15px; /* Add spacing between icons */
+  }
+
+  .profile-link {
+    order: 1; /* Move profile link to the left of the cart and wishlist icons */
+  }
+
+  .icon.cart,
+  .icon.wishlist {
+    order: 2; /* Move cart and wishlist icons to the right of the profile icon */
+  }
+
+  .nav-button {
+    width: auto;
+    text-align: center;
+    margin-left: 0; /* Remove left margin to center align */
+    padding: 8px 16px;
+  }
+
+  .profile-link {
+    width: auto;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-name {
+    font-size: 20px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .search-form input {
+    width: 70%;
+  }
+
+  .nav-button {
+    width: auto;
+    padding: 6px 12px;
+    margin-left: 0; /* Remove left margin to center align */
+  }
+}

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.admin-products {
+  font-family: 'Poppins', sans-serif;
+  background: #EDE574; /* Gradient background similar to your existing styles */
+  background: linear-gradient(to right, #E1F5C4, #EDE574); /* Ensure a consistent look with your application */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the content */
+}
+
+h2 {
+  font-size: 32px; /* Heading font size */
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Edu AU VIC WA NT Hand', cursive; /* Font used for home page title */
+}
+
+.add-product-form {
+  width: 100%; /* Full width form */
+  max-width: 600px; /* Limit form width for better readability */
+  margin-bottom: 20px;
+}
+
+.add-product-form input {
+  display: block;
+  width: calc(100% - 22px); /* Full width minus padding */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.add-product-form button {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-product-form button:hover {
+  background-color: #e64a19;
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%; /* Full width list */
+  max-width: 800px; /* Limit list width for better readability */
+}
+
+.product-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-item h3 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+  font-family: 'Edu AU VIC WA NT Hand', cursive; /* Font used for home page title */
+}
+
+.product-item p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.product-buttons {
+  display: flex;
+  gap: 10px; /* Add space between buttons */
+}
+
+.product-item button {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.product-item button:hover {
+  background-color: #e64a19;
+}
+
+@media (max-width: 768px) {
+  .add-product-form input, .add-product-form button {
+    width: 100%;
+  }
+
+  .product-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+

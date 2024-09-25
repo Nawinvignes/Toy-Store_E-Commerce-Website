@@ -1,0 +1,40 @@
+.toy-item {
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .toy-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .toy-name {
+    font-size: 1.2rem;
+    margin: 8px 0;
+  }
+  
+  .toy-price {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+  
+  .toy-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .toy-button:hover {
+    background-color: #0056b3;
+  }
+  

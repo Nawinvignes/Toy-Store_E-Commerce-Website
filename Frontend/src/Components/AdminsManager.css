@@ -1,0 +1,113 @@
+/* src/components/ManageAdmins.css */
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+.admin-user {
+  padding: 20px;
+  background: linear-gradient(to right, #E1F5C4, #EDE574); /* Gradient background */
+  border-radius: 8px; /* Rounded corners */
+  max-width: 80%; /* Center container horizontally */
+  margin: 20px auto; /* Center container */
+  text-align: center; /* Center align text */
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.admin-user h2 {
+  font-size: 32px; /* Font size for heading */
+  color: #333; /* Dark text color */
+  margin-bottom: 20px;
+  font-family: 'Edu AU VIC WA NT Hand', cursive; /* Special font for headings */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  padding: 10px; /* Padding for heading */
+  border-radius: 8px; /* Rounded corners for the background */
+}
+
+.admin-user form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.admin-user input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.admin-user button {
+  padding: 10px 20px;
+  background-color: #FF5722; /* Orange background */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-user button:hover {
+  background-color: #E64A19; /* Darker orange on hover */
+}
+
+.admin-user table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto; /* Center horizontally and margin around the table */
+  max-width: 800px; /* Max width to control table size */
+}
+
+.admin-user th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center; /* Center align text in cells */
+}
+
+.admin-user th {
+  background-color: #FF5722; /* Orange for table headers */
+  color: #fff; /* White text color */
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.admin-user tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light grey for even rows */
+}
+
+.admin-user tr:nth-child(odd) {
+  background-color: #fff; /* White for odd rows */
+}
+
+.admin-user tr:hover {
+  background-color: #FFEB3B; /* Light yellow for hover effect */
+}
+
+@media (max-width: 768px) {
+  .admin-user {
+    max-width: 100%; /* Full width on smaller screens */
+    padding: 10px; /* Reduced padding */
+  }
+
+  .admin-user h2 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    padding: 8px; /* Adjust padding */
+  }
+
+  .admin-user table {
+    font-size: 14px; /* Adjust font size for table */
+  }
+
+  .admin-user th, td {
+    padding: 8px; /* Adjust padding */
+  }
+
+  .admin-user form {
+    flex-direction: column; /* Stack form inputs on smaller screens */
+    gap: 10px; /* Adjust gap */
+  }
+
+  .admin-user input {
+    margin: 0; /* Reset margin for inputs */
+  }
+}

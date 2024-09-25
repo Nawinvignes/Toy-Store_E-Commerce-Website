@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "message": "Great service and awesome toys!",
+      "timestamp": "2024-07-30T14:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "message": "My kids love the new toys. Thanks!",
+      "timestamp": "2024-07-30T15:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "message": "Excellent quality and fast delivery.",
+      "timestamp": "2024-07-30T16:00:00Z"
+    }
+  ]
+  
